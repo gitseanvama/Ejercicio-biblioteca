@@ -24,7 +24,8 @@ class base_datos_libro:
         return self.base_datos_libro.count(valor)
 
     def ordenar_libros(self):
-        self.base_datos_libro.sort()
+        self.base_datos_libro.sort(key=lambda libro: libro.get_fecha(), reverse=True)
+        return self.base_datos_libro
 
     def invertir_libros(self):
         self.base_datos_libro.reverse()
