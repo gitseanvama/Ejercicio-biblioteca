@@ -9,7 +9,7 @@ obj_bd = base_datos_libro()
 
 obj_autor = Autor_modelo("sandra", "ortega","18", "2008","Colombiana" )
 lista_datos_autor=["carolina","Ortega", "08/04/2008", "Argentina" ]
-lista_datos_autor1=["Thomas", "Blanco", "22/02/2007", "Colombiano" ]
+lista_datos_autor1=["Sergio", "Vargas", "06/02/1997", "Colombiano" ]
 print(obj_autor.ver_info())
 
 obj_libro1 = Libro_modelo("2024-01-01", 250, "Aventura", "Ficción")
@@ -32,5 +32,6 @@ obj_bd.ordenar_libros()
 
 obj_bd.remover_libros(obj_libro1)
 obj_bd.mostrar_info()
+
 
 obj_api_autores = Api_lista_autores()
